@@ -25,3 +25,26 @@ def create_research_agent():
         llm=llm,
     )
 
+
+
+
+def create_research_task(agent, topic):
+    return Task(
+        description=f"Research the following topic and provide a comprehensive summary: {topic}",
+        agent=agent,
+        expected_output = "A detailed summary of the research findings, including key points and insights related to the topic"
+    )
+
+def run_research(topic):
+    agent = create_research_agent()
+    task = create_research_task(agent, topic)
+    crew = Crew(agents=[agent], tasks=[task])
+    result = crew.kickoff()
+    return result
+
+if __name__ == "__main__":
+    print("Welcome to the Research Agent!")
+    topic = input("Enter the research topic: ")
+    result = run_research(topic)
+    print("Research Result:")
+    print(result)
