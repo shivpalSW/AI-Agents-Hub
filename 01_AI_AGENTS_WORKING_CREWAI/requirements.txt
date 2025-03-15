@@ -1,5 +1,13 @@
-crewai==0.22.5
+#crewai==0.22.5
 crewai[tools]
-langchain_openai
+#langchain_openai
 langchain_community
-python-dotenv
+langchain-community
+#python-dotenv
+#requests
+databricks-sdk
+
+crewai>=0.28.8
+langchain_openai>=0.1.7
+python-dotenv>=1.0.0
+requests>=2.32.0

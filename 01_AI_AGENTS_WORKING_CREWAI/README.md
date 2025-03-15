@@ -11,4 +11,12 @@ conda activate llmapp
 pip install -r requirements.txt
 ```
 
+```cmd
+python research_agent.py   
+```
+
+```cmd
+python main.py   
+```
+
 - SERPER API KEY = https://serper.dev/api-key
