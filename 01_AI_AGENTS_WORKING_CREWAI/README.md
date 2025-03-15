@@ -1,7 +1,14 @@
-- conda create -p llmapp python=3.11 -y
+## Commands
 
-- conda activate llmapp
+### Create Environment
+```cmd
+conda create -p llmapp python=3.11 -y
+```
+```cmd
+conda activate llmapp
+```
+```cmd
+pip install -r requirements.txt
+```
 
-- pip install -r requirements.txt
-
-- https://serper.dev/api-key
+- SERPER API KEY = https://serper.dev/api-key
